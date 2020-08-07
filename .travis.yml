@@ -8,7 +8,7 @@ before_install:
 script:
   - docker run -e CI=true alex/docker-react npm run test -- --coverage
 
-language: generic 
+language: generic
 
 deploy:
   provider: elasticbeanstalk
@@ -21,4 +21,8 @@ deploy:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
-    SECURE: "$AWS_SECRET_KEY"
+    secure: "$AWS_SECRET_KEY"
+
+  // AKIATWGXL3USABLHSJPK
+  // 7aBSxV0/t6IgGyw/M9Wkwwx1trZ8UTjW/25uahrQ
+  // 7aBSxV0/t6IgGyw/M9Wkwwx1trZ8UTjW/25uahrQ
